@@ -4,7 +4,8 @@ const meow = require('meow');
 const chalk = require('chalk');
 const main = require('../index');
 
-const cli = meow(`
+const cli = meow(
+	`
         ${chalk.blue('create-discord-boilerplate 1.0.0')}
 
         Usage
@@ -16,17 +17,19 @@ const cli = meow(`
 
         Example
         ${chalk.cyanBright('$ create-discord-boilerplate --path bot')}
-`, {
-        flags: {
-                path: {
-                        type: 'string',
-                        alias: 'p',
-                        isRequired: true
-                },
-                help: {
-                        alias: 'h'
-                }
-        }
-});
+`,
+	{
+		flags: {
+			path: {
+				type: 'string',
+				alias: 'p',
+				isRequired: true,
+			},
+			help: {
+				alias: 'h',
+			},
+		},
+	},
+);
 
 main(cli.input[0], cli, cli.flags);
