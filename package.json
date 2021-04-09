@@ -1,0 +1,24 @@
+{
+  "name": "create-discord-boilerplate",
+  "version": "1.0.0",
+  "description": "A cli tool that create discord bot boilerplate code!",
+  "main": "index.js",
+  "repository": "https://github.com/Shukaaku/create-discord-boilerplate.git",
+  "author": "1chiSensei <mail@1chi.tk>",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.1.0",
+    "inquirer": "^8.0.0",
+    "meow": "^9.0.0",
+    "ora": "^5.4.0"
+  },
+  "peerDependencies": {
+    "discord-akairo": "^8.1.0",
+    "discord.js": "^12.5.3",
+    "discord.js-commando": "^0.12.3",
+    "eris": "^0.15.0",
+    "yuuko": "^2.2.0"
+  }
+}
